@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Nilai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Input Nilai</h1>
+        <form id="inputForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="nim">Nim:</label>
+            <input type="number" id="nim" name="nim" required>
+
+
+            <label for="matakuliah">Mata Kuliah:</label>
+            <select id="matakuliah" name="matakuliah" required>
+                <option value="">Pilih Mata Kuliah</option>
+                <option value="Matematika">Matematika</option>
+                <option value="Seni">Seni</option>
+                <option value="Kimia">Kimia</option>
+                <option value="Biologi">Biologi</option>
+                <option value="Komputer">Komputer</option>
+                <option value="Bahasa Inggris">Bahasa Inggris</option>
+                <option value="Ekonomi">Ekonomi</option>
+                <option value="Sejarah">Sejarah</option>
+                <option value="Geografi">Geografi</option>
+                <option value="Sosiologi">Sosiologi</option>
+            </select>
+
+            <label for="nilai">Nilai:</label>
+            <input type="number" id="nilai" name="nilai" required>
+
+
+            <div class="buttons">
+                <button type="button" id="tampilButton">WAYAE TAMPIL</button>
+                <button type="button" id="resetButton">RESET</button>
+            </div>
+        </form>
+        <div id="result" class="result-container" style="display: none;">
+            <h2>Hasil Input</h2>
+            <p><strong>Nama:</strong> <span id="resultNama"></span></p>
+            <p><strong>Nim:</strong> <span id="resultNim"></span></p>
+            <p><strong>Matakuliah:</strong> <span id="resultMatakuliah"></span></p>
+            <p><strong>Nilai:</strong> <span id="resultNilai"></span></p>
+            <p><strong>Nilai Huruf:</strong> <span id="nilaiHuruf"></span></p>
+            <p><strong>Indeks Nilai:</strong> <span id="indeksNilai"></span></p>
+            <p><strong>Keterangan:</strong> <span id="result"></span></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
